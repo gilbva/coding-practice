@@ -1,2 +1,3 @@
-# coding-practice
-Practica de programacion para principiantes
+# Practica de programacion para principiantes
+
+Ejercicios de programacion basica para principiantes
