@@ -3,28 +3,28 @@ const { createNumbers, logOutput: lo, initLogs: init } = require('./test-utils')
 
 beforeEach(init);
 
-describe("printMessage", () => {
+describe("1-printMessage", () => {
     test('debe imprimir el mensaje \'Hello World\'', () => {
         p.printMessage();
         expect(lo.messages[0]).toBe('Hello World');
     });
 });
 
-describe("printSum2And3", () => {
+describe("2-printSum2And3", () => {
     test('debe imprimir 5', () => {
         p.printSum2And3();
         expect(lo.messages[0]).toBe(5);
     });
 });
 
-describe("printProduct", () => {
+describe("3-printProduct", () => {
     test('debe imprimir 30', () => {
         p.printProduct();
         expect(lo.messages[0]).toBe(30);
     });
 });
 
-describe("swap", () => {
+describe("4-swap", () => {
     test('[3, 4, 78, 4] debe intercambiar 3 y 4', () => {
         const array = [3, 4, 78, 4];
         p.swap(array, 0, 1);
@@ -47,45 +47,45 @@ describe("swap", () => {
     });
 });
 
-describe("sum", () => {
+describe("5-sum", () => {
     test(      '1 + 2 = 3', () => expect(p.sum(1, 2)).toBe(3));
     test(      '8 + 7 = 15', () => expect(p.sum(8, 7)).toBe(15));
     test(    '-10 + 5 = -5', () => expect(p.sum(-10, 5)).toBe(-5));
     test('1000 + -800 = 200', () => expect(p.sum(1000, -800)).toBe(200));
 });
 
-describe("minus", () => {
+describe("6-minus", () => {
     test(      '1 - 2 = -1', () => expect(p.minus(1, 2)).toBe(-1) );
     test(      '8 - 7 = 1', () => expect(p.minus(8, 7)).toBe(1) );
     test(    '-10 - 5 = -15', () => expect(p.minus(-10, 5)).toBe(-15) );
     test('1000 - -800 = 1800', () => expect(p.minus(1000, -800)).toBe(1800) );
 });
 
-describe("mult", () => {
+describe("7-mult", () => {
     test(      '1 * 2 = 2', () => expect(p.mult(1, 2)).toBe(2) );
     test(      '8 * 7 = 56', () => expect(p.mult(8, 7)).toBe(56) );
     test(    '-10 * 5 = -50', () => expect(p.mult(-10, 5)).toBe(-50) );
     test('1000 * -800 = -800000', () => expect(p.mult(1000, -800)).toBe(-800000) );
 });
 
-describe("divide", () => {
+describe("8-divide", () => {
     test(    '2 / 2 = 1', () => expect(p.divide(2, 2)).toBe(1) );
     test(    '8 / 4 = 2', () => expect(p.divide(8, 4)).toBe(2) );
     test(  '-10 / 5 = -2', () => expect(p.divide(-10, 5)).toBe(-2) );
     test('800 / -10 = -80', () => expect(p.divide(800, -10)).toBe(-80) );
 });
 
-describe("square", () => {
+describe("9-square", () => {
     test('3 square = 9', () => expect(p.square(3)).toBe(9) );
     test('-10 square = 100', () => expect(p.square(-10)).toBe(100) );
 });
 
-describe("cube", () => {
+describe("10-cube", () => {
     test('3 cube = 27', () => expect(p.cube(3)).toBe(27) );
     test('-10 cube = -1000', () => expect(p.cube(-10)).toBe(-1000) );
 });
 
-describe("reminder", () => {
+describe("11-reminder", () => {
     test('3 reminder 2 = 1', () => expect(p.reminder(3, 2)).toBe(1) );
     test('-10 reminder 7 = -3', () => expect(p.reminder(-10, 7)).toBe(-3) );
     test('18 reminder -8 = -2', () => expect(p.reminder(18, -8)).toBe(2) );
@@ -93,25 +93,25 @@ describe("reminder", () => {
     test('30 reminder 3 = 0', () => expect(p.reminder(30, 3)).toBe(0) );
 });
 
-describe("abs", () => {
+describe("12-abs", () => {
     test('3 abs = 3', () => expect(p.abs(3)).toBe(3) );
     test('-10 abs = 10', () => expect(p.abs(-10)).toBe(10) );
 });
 
-describe("biggestTwo", () => {
+describe("13-biggestTwo", () => {
     test('6 > 5 => 6', () => expect(p.biggestTwo(6, 5)).toBe(6) );
     test('-10 > 0 => 0', () => expect(p.biggestTwo(-10, 0)).toBe(0) );
     test('10 > -1 => 10', () => expect(p.biggestTwo(10, -1)).toBe(10) );
 });
 
-describe("biggestThree", () => {
+describe("14-biggestThree", () => {
     test('biggest(5, 6, 8) => 8', () => expect(p.biggestThree(5, 6, 8)).toBe(8) );
     test('biggest(5, 6, -8) => 6', () => expect(p.biggestThree(5, 6, -8)).toBe(6) );
     test('biggest(50, 6, -8) => 50', () => expect(p.biggestThree(50, 6, -8)).toBe(50) );
     test('biggest(0, 0, 0) => 0', () => expect(p.biggestThree(0, 0, 0)).toBe(0) );
 });
 
-describe("isEven", () => {
+describe("15-isEven", () => {
     test('isEven(5) => false', () => expect(p.isEven(5)).toBe(false) );
     test('isEven(4) => true', () => expect(p.isEven(4)).toBe(true) );
     test('isEven(0) => true', () => expect(p.isEven(0)).toBe(true) );
@@ -119,36 +119,36 @@ describe("isEven", () => {
     test('isEven(-30) => true', () => expect(p.isEven(-30)).toBe(true) );
 });
 
-describe("calculateWithIf", () => {
-    describe("5: calculateWithIf suma", () => {
+describe("16-calculateWithIf", () => {
+    describe("calculateWithIf suma", () => {
         test(      '1 + 2 = 3', () => expect(p.calculateWithIf('suma', 1, 2)).toBe(3));
         test(      '8 + 7 = 15', () => expect(p.calculateWithIf('suma', 8, 7)).toBe(15));
         test(    '-10 + 5 = -5', () => expect(p.calculateWithIf('suma', -10, 5)).toBe(-5));
         test('1000 + -800 = 200', () => expect(p.calculateWithIf('suma', 1000, -800)).toBe(200));
     });
     
-    describe("6: calculateWithIf resta", () => {
+    describe("calculateWithIf resta", () => {
         test(      '1 - 2 = -1', () => expect(p.calculateWithIf('resta', 1, 2)).toBe(-1) );
         test(      '8 - 7 = 1', () => expect(p.calculateWithIf('resta', 8, 7)).toBe(1) );
         test(    '-10 - 5 = -15', () => expect(p.calculateWithIf('resta', -10, 5)).toBe(-15) );
         test('1000 - -800 = 1800', () => expect(p.calculateWithIf('resta', 1000, -800)).toBe(1800) );
     });
     
-    describe("7: calculateWithIf producto", () => {
+    describe("calculateWithIf producto", () => {
         test(      '1 * 2 = 2', () => expect(p.calculateWithIf('producto', 1, 2)).toBe(2) );
         test(      '8 * 7 = 56', () => expect(p.calculateWithIf('producto', 8, 7)).toBe(56) );
         test(    '-10 * 5 = -50', () => expect(p.calculateWithIf('producto', -10, 5)).toBe(-50) );
         test('1000 * -800 = -800000', () => expect(p.calculateWithIf('producto', 1000, -800)).toBe(-800000) );
     });
     
-    describe("3: calculateWithIf divide", () => {
+    describe("calculateWithIf divide", () => {
         test(    '2 / 2 = 1', () => expect(p.calculateWithIf('division', 2, 2)).toBe(1) );
         test(    '8 / 4 = 2', () => expect(p.calculateWithIf('division', 8, 4)).toBe(2) );
         test(  '-10 / 5 = -2', () => expect(p.calculateWithIf('division', -10, 5)).toBe(-2) );
         test('800 / -10 = -80', () => expect(p.calculateWithIf('division', 800, -10)).toBe(-80) );
     });
     
-    describe("3: calculateWithIf resto", () => {
+    describe("calculateWithIf resto", () => {
         test('3 resto 2 = 1', () => expect(p.calculateWithIf('resto', 3, 2)).toBe(1) );
         test('-10 resto 7 = -3', () => expect(p.calculateWithIf('resto', -10, 7)).toBe(-3) );
         test('18 resto -8 = -2', () => expect(p.calculateWithIf('resto', 18, -8)).toBe(2) );
@@ -158,36 +158,36 @@ describe("calculateWithIf", () => {
     
 });
 
-describe("calculateWithSwitch", () => {
-    describe("5: calculateWithSwitch suma", () => {
+describe("17-calculateWithSwitch", () => {
+    describe("calculateWithSwitch suma", () => {
         test(      '1 + 2 = 3', () => expect(p.calculateWithSwitch('suma', 1, 2)).toBe(3));
         test(      '8 + 7 = 15', () => expect(p.calculateWithSwitch('suma', 8, 7)).toBe(15));
         test(    '-10 + 5 = -5', () => expect(p.calculateWithSwitch('suma', -10, 5)).toBe(-5));
         test('1000 + -800 = 200', () => expect(p.calculateWithSwitch('suma', 1000, -800)).toBe(200));
     });
     
-    describe("6: calculateWithSwitch resta", () => {
+    describe("calculateWithSwitch resta", () => {
         test(      '1 - 2 = -1', () => expect(p.calculateWithSwitch('resta', 1, 2)).toBe(-1) );
         test(      '8 - 7 = 1', () => expect(p.calculateWithSwitch('resta', 8, 7)).toBe(1) );
         test(    '-10 - 5 = -15', () => expect(p.calculateWithSwitch('resta', -10, 5)).toBe(-15) );
         test('1000 - -800 = 1800', () => expect(p.calculateWithSwitch('resta', 1000, -800)).toBe(1800) );
     });
     
-    describe("7: calculateWithSwitch producto", () => {
+    describe("calculateWithSwitch producto", () => {
         test(      '1 * 2 = 2', () => expect(p.calculateWithSwitch('producto', 1, 2)).toBe(2) );
         test(      '8 * 7 = 56', () => expect(p.calculateWithSwitch('producto', 8, 7)).toBe(56) );
         test(    '-10 * 5 = -50', () => expect(p.calculateWithSwitch('producto', -10, 5)).toBe(-50) );
         test('1000 * -800 = -800000', () => expect(p.calculateWithSwitch('producto', 1000, -800)).toBe(-800000) );
     });
     
-    describe("3: calculateWithSwitch divide", () => {
+    describe("calculateWithSwitch divide", () => {
         test(    '2 / 2 = 1', () => expect(p.calculateWithSwitch('division', 2, 2)).toBe(1) );
         test(    '8 / 4 = 2', () => expect(p.calculateWithSwitch('division', 8, 4)).toBe(2) );
         test(  '-10 / 5 = -2', () => expect(p.calculateWithSwitch('division', -10, 5)).toBe(-2) );
         test('800 / -10 = -80', () => expect(p.calculateWithSwitch('division', 800, -10)).toBe(-80) );
     });
     
-    describe("3: calculateWithSwitch resto", () => {
+    describe("calculateWithSwitch resto", () => {
         test('3 resto 2 = 1', () => expect(p.calculateWithSwitch('resto', 3, 2)).toBe(1) );
         test('-10 resto 7 = -3', () => expect(p.calculateWithSwitch('resto', -10, 7)).toBe(-3) );
         test('18 resto -8 = -2', () => expect(p.calculateWithSwitch('resto', 18, -8)).toBe(2) );
@@ -197,94 +197,94 @@ describe("calculateWithSwitch", () => {
     
 });
 
-describe("printFrom1TO5", () => {
+describe("18-printFrom1TO5", () => {
     test('printFrom1TO5', () => {
         p.printFrom1TO5();
         expect(lo.messages).toEqual(expect.arrayContaining(createNumbers(1, 5)));
     });
 });
 
-describe("printFrom1TO1000", () => {
+describe("19-printFrom1TO1000", () => {
     test('printFrom1TO1000', () => {
         p.printFrom1TO1000();
         expect(lo.messages).toEqual(expect.arrayContaining(createNumbers(1, 1000)));
     });
 });
 
-describe("printEventNumbers1To1000", () => {
+describe("20-printEventNumbers1To1000", () => {
     test('printEventNumbers1To1000', () => {
         p.printEventNumbers1To1000();
         expect(lo.messages).toEqual(expect.arrayContaining(createNumbers(1, 1000).filter(x => x % 2 == 0)));
     });
 });
 
-describe("printEventNumbers0To900", () => {
+describe("21-printEventNumbers0To900", () => {
     test('printEventNumbers0To900', () => {
         p.printEventNumbers0To900();
         expect(lo.messages).toEqual(expect.arrayContaining(createNumbers(0, 900).filter(x => x % 2 == 0)));
     });
 });
 
-describe("sumNumbers1To2000", () => {
+describe("22-sumNumbers1To2000", () => {
     test('sumNumbers1To2000', () => {
         expect(p.sumNumbers1To2000()).toBe(createNumbers(1, 2000).reduce((p, c) => p + c, 0));
     });
 });
 
-describe("sumOddNumbers1To2000", () => {
+describe("23-sumOddNumbers1To2000", () => {
     test('sumOddNumbers1To2000', () => {
         expect(p.sumOddNumbers1To2000()).toBe(createNumbers(1, 2000).filter(x => x % 2 == 1).reduce((p, c) => p + c, 0));
     });
 });
 
-describe("averageOdd1000To3000", () => {
+describe("24-averageOdd1000To3000", () => {
     test('averageOdd1000To3000', () => {
         var oddsNumbs = createNumbers(1000, 3000).filter(x => x % 2 == 1);
         expect(p.averageOdd1000To3000()).toBe(oddsNumbs.reduce((p, c) => p + c, 0) / oddsNumbs.length);
     });
 });
 
-describe("printWithWhile", () => {
+describe("25-printWithWhile", () => {
     test('printWithWhile', () => {
         p.printWithWhile();
         expect(lo.messages).toEqual(expect.arrayContaining(createNumbers(1, 1000)));
     });
 });
 
-describe("printEvenWithWhile1To1000", () => {
+describe("26-printEvenWithWhile1To1000", () => {
     test('printEvenWithWhile1To1000', () => {
         p.printEvenWithWhile1To1000();
         expect(lo.messages).toEqual(expect.arrayContaining(createNumbers(1, 1000).filter(x => x % 2 == 0)));
     });
 });
 
-describe("printOddWithWhile0To999", () => {
+describe("27-printOddWithWhile0To999", () => {
     test('printOddWithWhile0To999', () => {
         p.printOddWithWhile0To999();
         expect(lo.messages).toEqual(expect.arrayContaining(createNumbers(0, 999).filter(x => x % 2 == 1)));
     });
 });
 
-describe("sumWithWhile1000To2000", () => {
+describe("28-umWithWhile1000To2000", () => {
     test('sumWithWhile1000To2000', () => {
         expect(p.sumWithWhile1000To2000()).toBe(createNumbers(1000, 2000).reduce((c, p) => p + c, 0));
     });
 });
 
-describe("sumOddsWithWhile1000To2000", () => {
+describe("29-sumOddsWithWhile1000To2000", () => {
     test('sumOddsWithWhile1000To2000', () => {
         expect(p.sumOddsWithWhile1000To2000()).toBe(createNumbers(1000, 2000).filter(x => x % 2 == 1).reduce((c, p) => p + c, 0));
     });
 });
 
-describe("averageWithWhile1000To3000", () => {
+describe("30-averageWithWhile1000To3000", () => {
     test('averageWithWhile1000To3000', () => {
         var numbs = createNumbers(1000, 3000);
         expect(p.averageOdd1000To3000()).toBe(numbs.reduce((p, c) => p + c, 0) / numbs.length);
     });
 });
 
-describe("sumArray", () => {
+describe("31-sumArray", () => {
     test('sum empty array', () => expect(p.sumArray([])).toBe(0));
     test('sum 1 element array', () => expect(p.sumArray([10])).toBe(10));
     test('sum many elements array', () => expect(p.sumArray([0, 10, 7, 79, 0, 1, 3])).toBe(100));
@@ -295,7 +295,7 @@ describe("sumArray", () => {
     });
 });
 
-describe("biggestInArray", () => {
+describe("32-biggestInArray", () => {
     test('biggest array with 1 element', () => expect(p.biggestInArray([10])).toBe(10));
     test('biggest array with 2 element', () => expect(p.biggestInArray([-1, 1])).toBe(1));
     test('biggest array with zero', () => expect(p.biggestInArray([-1, 0, -9])).toBe(0));
@@ -304,7 +304,7 @@ describe("biggestInArray", () => {
     test('biggest array with duplicates', () => expect(p.biggestInArray([10, 10, 8, 10, 10])).toBe(10));
 });
 
-describe("smallestInArray", () => {
+describe("33-smallestInArray", () => {
     test('smallest array with 1 element', () => expect(p.smallestInArray([10])).toBe(10));
     test('smallest array with 2 element', () => expect(p.smallestInArray([-1, 1])).toBe(-1));
     test('smallest array with zero', () => expect(p.smallestInArray([-1, 0, -9])).toBe(-9));
@@ -313,7 +313,7 @@ describe("smallestInArray", () => {
     test('smallest array with duplicates', () => expect(p.smallestInArray([10, 10, 11, 10, 10])).toBe(10));
 });
 
-describe("duplicateArray", () => {
+describe("34-duplicateArray", () => {
     test('duplicate array with 0 element', () => {
         var array = [];
         p.duplicateArray(array);
@@ -333,7 +333,7 @@ describe("duplicateArray", () => {
     });
 });
 
-describe("squareArray", () => {
+describe("35-squareArray", () => {
     test('square array with 0 element', () => {
         var array = [];
         p.squareArray(array);
@@ -353,21 +353,21 @@ describe("squareArray", () => {
     });
 });
 
-describe("parityArray", () => {
+describe("36-parityArray", () => {
     test('parityArray with empty array', () => expect(p.parityArray([])).toEqual([]) );
     test('parityArray with 1 element array inpair', () => expect(p.parityArray([1])).toEqual([false]) );
     test('parityArray with 1 element array pair', () => expect(p.parityArray([2])).toEqual([true]) );
     test('parityArray with may elements array', () => expect(p.parityArray([1, 2, 5, 7, -19, -20, 22, -6])).toEqual([false, true, false, false, false, true, true, true]) );
 });
 
-describe("averageArray", () => {
+describe("37-averageArray", () => {
     test('averageArray with 1 element', () => expect(p.averageArray([10])).toBe(10) );
     test('averageArray with 2 element', () => expect(p.averageArray([10, 2])).toBe(6) );
     test('averageArray with negative element', () => expect(p.averageArray([10, -2])).toBe(4) );
     test('averageArray with many element', () => expect(p.averageArray([10, -2, 20, -100, 80, 92, -10, -10])).toBe(10) );
 });
 
-describe("printEvenArray", () => {
+describe("38-printEvenArray", () => {
     test('printEvenArray empty', () => {
         var array = [];
         p.printEvenArray(array);
@@ -393,7 +393,7 @@ describe("printEvenArray", () => {
     });
 });
 
-describe("printOddArray", () => {
+describe("39-printOddArray", () => {
     test('printOddArray empty', () => {
         var array = [];
         p.printOddArray(array);
@@ -419,7 +419,7 @@ describe("printOddArray", () => {
     });
 });
 
-describe("countEvenArray", () => {
+describe("40-countEvenArray", () => {
     test('countEvenArray with 0 element', () => expect(p.countEvenArray([])).toBe(0) );
     test('countEvenArray with 1 element', () => expect(p.countEvenArray([11])).toBe(0) );
     test('countEvenArray with 1 element', () => expect(p.countEvenArray([10])).toBe(1) );
@@ -431,7 +431,7 @@ describe("countEvenArray", () => {
 });
 
 
-describe("countOddArray", () => {
+describe("41-countOddArray", () => {
     test('countOddArray with 0 element', () => expect(p.countOddArray([])).toBe(0) );
     test('countOddArray with 1 element', () => expect(p.countOddArray([11])).toBe(1) );
     test('countOddArray with 1 element', () => expect(p.countOddArray([10])).toBe(0) );
@@ -442,7 +442,7 @@ describe("countOddArray", () => {
     test('countOddArray with many element', () => expect(p.countOddArray([10, -2, -3, 20, -101, 80, 92, -10, -10, 11, -11])).toBe(4) );
 });
 
-describe("averageEvenArray", () => {
+describe("42-averageEvenArray", () => {
     test('averageEvenArray with 1 element', () => expect(p.averageEvenArray([10])).toBe(10) );
     test('averageEvenArray with 2 element', () => expect(p.averageEvenArray([10, 13])).toBe(10) );
     test('averageEvenArray with 2 element', () => expect(p.averageEvenArray([16, 12])).toBe(14) );
@@ -450,7 +450,7 @@ describe("averageEvenArray", () => {
     test('averageEvenArray with many element', () => expect(p.averageEvenArray([10, -2, -3, 20, -101, 10, 10, 80, 90, 2, -10, -10, 11, -11])).toBe(20) );
 });
 
-describe("averageOddArray", () => {
+describe("43-averageOddArray", () => {
     test('averageEvenArray with 1 element', () => expect(p.averageOddArray([11])).toBe(11) );
     test('averageEvenArray with 2 element', () => expect(p.averageOddArray([10, 13])).toBe(13) );
     test('averageEvenArray with 2 element', () => expect(p.averageOddArray([15, 13])).toBe(14) );
@@ -458,7 +458,7 @@ describe("averageOddArray", () => {
     test('averageEvenArray with many element', () => expect(p.averageOddArray([10, -2, -3, 20, -101, 10, 10, 80, 90, 2, -10, -10, 11, -11])).toBe(-26) );
 });
 
-describe("printNames", () => {
+describe("44-printNames", () => {
     test('print names for products', () => {
         var products = [
             { name: "Harina", price: 10 }, 
@@ -471,7 +471,7 @@ describe("printNames", () => {
     });
 });
 
-describe("printPrices", () => {
+describe("45-printPrices", () => {
     test('print prices for products', () => {
         var products = [
             { name: "Harina", price: 10 }, 
@@ -485,7 +485,7 @@ describe("printPrices", () => {
 });
 
 
-describe("increasePrice", () => {
+describe("46-increasePrice", () => {
     test('increasePrice prices by zero', () => {
         var products = [
             { name: "Harina", price: 10 }, 
@@ -520,7 +520,7 @@ describe("increasePrice", () => {
     });
 });
 
-describe("getNames", () => {
+describe("47-getNames", () => {
     test('getNames', () => {
         var products = [
             { name: "Harina", price: 10 }, 
@@ -532,7 +532,7 @@ describe("getNames", () => {
     });
 });
 
-describe("getPrices", () => {
+describe("48-getPrices", () => {
     test('getPrices', () => {
         var products = [
             { name: "Harina", price: 10 }, 
@@ -544,7 +544,7 @@ describe("getPrices", () => {
     });
 });
 
-describe("mostExpensiveProduct", () => {
+describe("49-mostExpensiveProduct", () => {
     test('mostExpensiveProduct first', () => {
         var products = [
             { name: "Harina", price: 10 }, 
@@ -566,7 +566,7 @@ describe("mostExpensiveProduct", () => {
     });
 });
 
-describe("cheapestProduct", () => {
+describe("50-cheapestProduct", () => {
     test('cheapestProduct second', () => {
         var products = [
             { name: "Harina", price: 10 }, 
@@ -578,7 +578,7 @@ describe("cheapestProduct", () => {
     });
 });
 
-describe("getProductByName", () => {
+describe("51-getProductByName", () => {
     test('getProductByName first', () => {
         var products = [
             { name: "Harina", price: 10 }, 
