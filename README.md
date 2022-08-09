@@ -16,15 +16,15 @@ Descargar las dependencias usando npm
 
 Para ejecutar todas las pruebas usar el commando 
 
-        npm test
+    npm test
 
 Para ejecutar una prueba usar el siguiente commando
 
-        npm run test-single <nombre function>
+    npm run test-single <nombre function>
 
 Ejemplo: para probar el primer ejercicio printMessage usar:
 
-        npm run test-single 1-printMessage
+    npm run test-single 1-printMessage
 
 NOTA: Para una mejor experiencia instalar la extension jest runner the VS code y ejecutar las pruebas una a una en el fichero index.test.js
 
