@@ -13,6 +13,27 @@ function printProduct() {
 
 }
 
+/*
+var array = [4, 5, 6, 7, 8]
+var num = 5
+var i = 1
+var j = 2
+
+//4.1 estable el elemento 0 a 0
+//4.2 estable el elemento 1 a 0
+//4.3 estable el elemento 2 a 1
+//4.4 estable el elemento 3 al valor de la variable num
+//4.5 estable el elemento 4 al valor del elemento 1
+//4.6 estable el elemento i al numero 3
+//4.7 estable el elemento i al valor del elemento 3
+//4.8 estable el elemento i al valor del elemento j
+//4.9 declara una nueva variable llamada secondNum y asignale el valor del elemento 1 del arreglo
+//4.10 declara una nueva variable llamada ithNum y asignale el valor del elemento i del arreglo
+//4.11 declara una nueva variable llamada jthNum y asignale el valor del elemento j del arreglo
+//4.12 asigna el valor de la variable ithNum al elemento j del arreglo
+//4.13 asigna el valor de la variable jthNum al elemento i del arreglo
+*/
+
 //4. intercambie dos numeros en un arreglo dados sus indices
 function swap(array, i, j) {
 
