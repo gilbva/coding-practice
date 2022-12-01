@@ -34,6 +34,100 @@ var j = 2
 //4.13 asigna el valor de la variable jthNum al elemento i del arreglo
 */
 
+/*
+//1.1 que valor se imprimira en la consola
+var a = 1
+console.log(a); 
+
+//1.2 que valor se imprimira en la consola
+var a = 2
+console.log(a); 
+
+//1.3 que valor se imprimira en la consola
+var a = 2
+console.log(1); 
+
+//1.4 que valor se imprimira en la consola
+var a = 2
+console.log(1); // esta repetido
+
+//1.5 que valor se imprimira en la consola
+var nums = [1, 2, 3]
+console.log(nums[0]); 
+
+//1.6 que valor se imprimira en la consola
+var nums = [1, 2, 3]
+console.log(nums[1]); 
+
+//1.7 que valor se imprimira en la consola
+var nums = [20, -5, 3, 8]
+console.log(nums[3]); 
+
+//1.8 que valor se imprimira en la consola
+var nums = [20, -5, 8]
+var i = 0;
+console.log(nums[i]); 
+
+//1.8 que valor se imprimira en la consola
+var nums = [20, -5, 8, 6, -7]
+var i = 4;
+console.log(nums[i]); 
+
+//1.9 que valor se imprimira en la consola
+var nums = [20, -5, 8, 6, -7]
+var i = 3;
+console.log(nums[0]); 
+
+//2.0 que valor se imprimira en la consola
+var nums = [20, -5, 8, 6, -7]
+var i = 4;
+console.log(nums[4]); 
+
+//2.1 que valor se imprimira en la consola
+var nums = [20, -5, 8, 6, -7]
+var i = 6;
+nums[i] = 8
+console.log(nums[0]); 
+
+//2.2 que valor se imprimira en la consola
+var nums = [10, -5, 6, -8]
+nums[1+1] = 4
+var i = 2
+console.log(nums[i])
+
+//2.3 que valor se imprimira en la consola
+var nums = [10, -5, 6, -8]
+nums[0] = 4
+var i = 2
+console.log(nums[i])
+
+//2.4 que valor se imprimira en la consola
+var nums = [10, -5, 6, -8]
+var i = 1
+nums[i+1] = 4
+console.log(nums[2])
+
+//2.5 que valor se imprimira en la consola
+var nums = [1, 2, 4, 5]
+var i = nums[1]
+console.log(nums[i])
+
+//2.6 que valor se imprimira en la consola
+var nums = [1, 2, 4, 5]
+var i = nums[1]
+console.log(nums[i])
+
+//2.7 que valor se imprimira en la consola
+var nums = [1, 2, 4, 5]
+var i = nums[1]+1
+console.log(nums[i])
+
+//2.8 que valor se imprimira en la consola
+var nums = [1, 2, 4, 5]
+var i = nums[1-1]+1
+console.log(nums[i])
+*/
+
 //4. intercambie dos numeros en un arreglo dados sus indices
 function swap(array, i, j) {
 
