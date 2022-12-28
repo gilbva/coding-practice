@@ -52,7 +52,7 @@ console.log(1);
 
 //1.4 que valor se imprimira en la consola
 var a = 2
-console.log(1); // esta repetido
+console.log(a+1); 
 
 //1.5 que valor se imprimira en la consola
 var nums = [1, 2, 3]
@@ -129,6 +129,13 @@ console.log(nums[i])
 var nums = [1, 2, 4, 5]
 var i = nums[1-1]+1
 console.log(nums[i])
+
+var nums = [-1, 3, 4, 0]
+var j = 1;         
+var i = nums[j] 
+var k = nums[i]+j+1
+console.log(nums[k])
+
 */
 
 //4. intercambie dos numeros en un arreglo dados sus indices
